@@ -17,7 +17,7 @@ inputRef.addEventListener(
 function onSearchCountryInput() {
   listCountryRef.innerHTML = '';
   cardCountryRef.innerHTML = '';
-  
+
   const nameCountry = inputRef.value.trim();
   // якщо input пустий пошук не виконуємо
   if (nameCountry === '') {
@@ -35,7 +35,9 @@ function onSearchCountryInput() {
       renderPage(countries);
       console.log(countries);
     })
-    .catch(error => error);
+    .catch(error => {
+      Notiflix.Notify.failure('Oops, there is no country with that name');
+    });
 }
 
 function renderPage(arr) {
