@@ -10,6 +10,7 @@ body {
   background-color: #e2f3f6;
   color: #212121;
   line-height: 1.5;
+  text-align: center;
 }
 
 #search-box {
@@ -23,4 +24,8 @@ body {
 ul,
 ol {
   list-style: none;
+}
+
+.country-list{
+  text-align: left;
 }
