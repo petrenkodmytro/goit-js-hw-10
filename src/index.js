@@ -15,10 +15,12 @@ inputRef.addEventListener(
 );
 
 function onSearchCountryInput() {
+  const nameCountry = inputRef.value.trim();
+  // console.log(nameCountry);
+
   listCountryRef.innerHTML = '';
   cardCountryRef.innerHTML = '';
 
-  const nameCountry = inputRef.value.trim();
   // якщо input пустий пошук не виконуємо
   if (nameCountry === '') {
     return;
@@ -32,6 +34,7 @@ function onSearchCountryInput() {
         );
         return;
       }
+    
       renderPage(countries);
       // console.log(countries);
     })
