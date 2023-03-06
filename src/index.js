@@ -33,7 +33,7 @@ function onSearchCountryInput() {
         return;
       }
       renderPage(countries);
-      console.log(countries);
+      // console.log(countries);
     })
     .catch(error => {
       Notiflix.Notify.failure('Oops, there is no country with that name');
