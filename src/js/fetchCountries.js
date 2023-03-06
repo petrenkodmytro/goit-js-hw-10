@@ -12,6 +12,7 @@ export const fetchCountries = name => {
 
     return response.json();
   });
+  // не потрібно
   // .catch(error => {
   //   console.log('error in the function fetchCountries()', error);
   // });
